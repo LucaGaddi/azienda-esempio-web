@@ -1,0 +1,73 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlink a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navlink.flex-2 {
+    flex: 2;
+    
+}
+.navlink {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 30% 70%; /* in alternativa posso usare le frazioni e scrivere 1fr 2fr */
+}
+aside{
+    background-color: darkgrey;
+}
+article{
+        width: 80%;
+        margin: 10px auto;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        padding: 10px;
+}
+.card-header{
+    display: flex;
+    align-items: center;
+}
+.card-header img{
+    width: 100px; 
+    border-radius: 50%;
+}
+.card-header p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.card-footer p{
+    text-align: end;
+}
+header img{
+    width: 100%;
+}
+header{
+    position: relative;
+}
+header div{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.50);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 25px;
+    text-transform: uppercase;
+}
