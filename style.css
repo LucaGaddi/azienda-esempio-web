@@ -1,7 +1,15 @@
+body{
+    margin: 0;
+}
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
 }
 
 .navlink a {
@@ -23,7 +31,8 @@ nav {
 main {
     background-color: grey;
     display: grid;
-    grid-template-columns: 30% 70%; /* in alternativa posso usare le frazioni e scrivere 1fr 2fr */
+    grid-template-columns: 20% 80%; /* in alternativa posso usare le frazioni e scrivere 1fr 2fr */
+    margin: 0 10px
 }
 aside{
     background-color: darkgrey;
@@ -70,4 +79,43 @@ header div{
     border-radius: 50%;
     font-size: 25px;
     text-transform: uppercase;
+}
+#Chi-siamo img{
+    width: 350px;
+}
+.clear{
+    clear: both;
+}
+#Progetti{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 12px;
+}
+
+.pr-card-top{
+    position: relative;
+    
+}
+.pr-card-top h2{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.50);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 15px;
+}
+.pr-card-bot{
+    display: flex;
+    align-items: center;
+}
+.pr-card-bot img{
+    width: 20%;
+    float:left;
+    margin: 10px;
+    border-radius: 50%;
 }
