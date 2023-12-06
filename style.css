@@ -44,6 +44,13 @@ article{
         border-radius: 20px;
         padding: 10px;
 }
+/* Centrare oggetti */
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .card-header{
     display: flex;
     align-items: center;
@@ -66,18 +73,14 @@ header img{
 header{
     position: relative;
 }
-header div{
-    position: absolute;
+header h1{
     background-color: rgba(255, 255, 255, 0.50);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 60%;
     height: 50%;
     display: grid;
     place-items: center;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 40px;
     text-transform: uppercase;
 }
 #Chi-siamo img{
@@ -92,16 +95,12 @@ header div{
     font-size: 12px;
 }
 
-.pr-card-top{
+.prj-card-top{
     position: relative;
     
 }
-.pr-card-top h2{
-    position: absolute;
+.prj-card-top h2{
     background-color: rgba(255, 255, 255, 0.50);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 60%;
     height: 50%;
     display: grid;
@@ -109,11 +108,11 @@ header div{
     border-radius: 50%;
     font-size: 15px;
 }
-.pr-card-bot{
+.prj-card-bot{
     display: flex;
     align-items: center;
 }
-.pr-card-bot img{
+.prj-card-bot img{
     width: 20%;
     float:left;
     margin: 10px;
